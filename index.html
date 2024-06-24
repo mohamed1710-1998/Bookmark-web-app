@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookmark</title>
+        <link
+            rel="shortcut icon"
+            href="./images/icon.png"
+            type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/mediaquery.css" />
+    </head>
+
+    <body>
+        <section class="py-5">
+            <h1 class="text-center mb-5">Bookmarker</h1>
+
+            <div class="container">
+                <div class="inputWrapper mb-5">
+                    <h2 class="text-center mb-5">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Bookmark Your Favorite Sites
+                        <i class="fa-solid fa-bookmark"></i>
+                    </h2>
+                    <div class="form-group name-box mb-4">
+                        <label for="siteName" class="mb-2"><i
+                                class="fa-solid fa-book-bookmark"></i> Site
+                            Name</label>
+                        <input
+                            type="text"
+                            class="form-control mb-1"
+                            id="siteName"
+                            oninput=""
+                            placeholder="Write site name"
+                            required />
+                    </div>
+                    <div class="form-group url-box mb-4">
+                        <label for="siteUrl" class="mb-2"><i
+                                class="fa-solid fa-link"></i> Site Url</label>
+                        <input
+                            type="text"
+                            class="form-control mb-1"
+                            id="siteUrl"
+                            oninput=""
+                            placeholder="Enter site url"
+                            required />
+                    </div>
+                    <button
+                        id="submitBtn"
+                        class="btn addBtn add d-block mx-auto py-2 px-4">
+                        Add Site
+                    </button>
+                    <button
+                        onclick="updateInfo()"
+                        id="updateBtn"
+                        class="btn addBtn update d-block mx-auto py-2 px-4 d-none">
+                        Update Site
+                    </button>
+                </div>
+
+                <div class="tableWrapper">
+                    <table class="table table-hover text-center">
+                        <thead>
+                            <th>Index</th>
+                            <th>Site Name</th>
+                            <th>View</th>
+                            <th>Update</th>
+                            <th>Delet</th>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Hello</td>
+                                <td><a class="btn btn-primary " href="" target="_blank">visit</a></td>
+                                <td><a href="" class="btn btn-success ">update</a></td>
+                                <td><button class="btn btn-danger">Delete</button></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/mainn.js"></script>
+    </body>
+</html>

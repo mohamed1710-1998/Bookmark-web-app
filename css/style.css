@@ -1,0 +1,166 @@
+body {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  background-color: #F7ECDE;
+}
+.cursore-pointer {
+  cursor: pointer;
+}
+
+:root {
+  --main-color: #ce1212;
+  --valid-color: green;
+  --black-color: #37373f;
+  --third-color: #4f4f5a;
+  --second-color: #7f7f90;
+  --bg-white: #fff;
+  --bg-gray: #eee;
+  --color-white: #fff;
+  --nav-bg-color: #fff;
+  --color-black: #000;
+  --shadow-color: #0000001b;
+  --second-font: "Inter", sans-serif;
+  --icon-color: #fff;
+  --card-p: #7f7f90;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: white;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+}
+
+h2 {
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--valid-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form-group {
+  position: relative;
+}
+
+.add {
+  position: relative;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: all 0.5s;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--valid-color)
+  );
+}
+
+.add::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.add::after {
+  content: "Add Site";
+  position: absolute;
+  inset: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.add:hover::before {
+  inset: 100%;
+}
+
+.add:hover::after {
+  color: white;
+}
+
+
+.update {
+  position: relative;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: all 0.5s;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--valid-color)
+  );
+}
+
+.update::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.update::after {
+  content: "Update Site";
+  position: absolute;
+  inset: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.update:hover::before {
+  inset: 100%;
+}
+
+.update:hover::after {
+  color: white;
+}
+
+.inputWrapper {
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  transition: all 0.5s;
+  border-width: 3px 0;
+  border-style: dashed;
+  border-color: var(--valid-color);
+}
+
+hr {
+  color: var(--main-color);
+  font-weight: bold;
+  font-style: dashed;
+}
+
+label {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+label i {
+  color: var(--main-color);
+}
+
+thead th {
+  font-size: 22px;
+  font-weight: bolder;
+}

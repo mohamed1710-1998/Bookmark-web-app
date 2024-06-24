@@ -1,0 +1,17 @@
+@media screen and (max-width:900px) {
+    .inputWrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .inputWrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .inputWrapper {
+        width: 100%;
+    }
+}
